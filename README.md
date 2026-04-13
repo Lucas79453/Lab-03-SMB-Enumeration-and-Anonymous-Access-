@@ -81,7 +81,7 @@ Listing shares without authentication indicates poor access control and increase
 
 ### Evidence
 
-![Shares](lab03-shares.png)
+![Shares](lab03-smb-shares.png) 
 
 ---
 
