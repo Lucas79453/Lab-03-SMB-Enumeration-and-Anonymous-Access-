@@ -36,7 +36,7 @@ The enumeration revealed critical information:
   - msfadmin
   - www-data
 - The system is part of a workgroup: WORKGROUP
-- Samba version identified: Samba 3.0.20 (Metasploitable)
+- Samba version identified: Samba 3.0.20 (outdated and vulnerable)
 
 ### Real-World Relevance
 
@@ -68,6 +68,7 @@ The `-L` flag lists available SMB shares, and `-N` allows connection without a p
 ### Findings
 
 - Anonymous login was successful
+- Anonymous access was permitted via SMB (null session)
 - The following shares were identified:
   - tmp
   - opt
@@ -117,7 +118,7 @@ Unauthorized access to shared directories may lead to:
 ## Impact
 
 - Unauthorized access to SMB shares
-- Information disclosure (users, system details)
+- Information disclosure (user accounts, system configuration, and network details)
 - Increased attack surface for further exploitation
 - Potential for lateral movement in real environments
 
